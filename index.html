@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>PipkonDev</title>
+</head>
+<header>
+    <h1>CSS. Guía de referencia rápida</h1>
+</header>
+
+<body>
+
+
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Sintaxis</b></p>
+            <div class="tabla Inicio">
+                <pre><b>/* Comentario */
+    selector {
+        propiedad:valor;
+    }</b></pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Unidades</b></p>
+            <div class="tabla Inicio1">
+                <p>px | em | ex | % | in |cm | mm | pt | pc</p>
+                <p>#ff6633 | #f63 | rgb(0,255,0) | rgb(0%, 100%, 50%)</p>
+                <p>aqua | black | blue | fuchsia | gray | green | lime | maroon |</p>
+                <p>navy | olive | purple | red | silver | teal white | yellow</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Selectores</b></p>
+            <div class="tabla">
+                <pre><b>*</b>                       Todos los elementos</pre>
+                <hr>
+                <pre><b>div</b>                     < div ></pre>
+                <hr>
+                <pre><b>div*</b>                    Elementos dentro de < div></pre>
+                <hr>
+                <pre><b>div span</b>                < span > dentro de < div></pre>
+                <hr>
+                <pre><b>div, span</b>               < div > y < span ></pre>
+                <hr>
+                <pre><b>div > span</b>              < span > con < div > como padre</pre>
+                <hr>
+                <pre><b>div+span</b>                < span > precedido de < div > < / div ></pre>
+                <hr>
+                <pre><b>.foto</b>                   Elementos de la casa "foto"</pre>
+                <hr>
+                <pre><b>div.class</b>               < div > de la clase "foto"</pre>
+                <hr>
+                <pre><b>#casa</b>                   Elementos con id "casa"</pre>
+                <hr>
+                <pre><b>div#itemid</b>              < div > con id "casa"</pre>
+                <hr>
+                <pre><b>a[class]</b>                < a> con el atributo class</pre>
+                <hr>
+                <pre><b>a[ class~="x"]</b>          < a >cuando su clase es una lista de valores y uno de ellos es "x" </pre>
+                <hr>
+                <pre><b>a[ Lang |="en"]</b>         < a > cuando lang comienza por "en"</a></pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Pseudo-clases y pseudoelementos</b></p>
+            <div class="tabla">
+                <pre><b>:active</b>                 Elemento seleccionado</pre>
+                <hr>
+                <pre><b>:focus</b>                  Elemento seleccionado</pre>
+                <hr>
+                <pre><b>:hover</b>                  Elemento con el cursor del ratón encima</pre>
+                <hr>
+                <pre><b>:link</b>                   Vínculo no visitado</pre>
+                <hr>
+                <pre><b>:visited</b>                Vínculo visitado</pre>
+                <hr>
+                <pre><b>:first-child</b>            Vínculo visitado</pre>
+                <hr>
+                <pre><b>:lang</b>                   Elemento que es el primer hijo de otro elemento</pre>
+                <hr>
+                <pre><b>:first-letter</b>           Lenguage utilizado en un elemento</pre>
+                <hr>
+                <pre><b>:first-line</b>             La primera letra de un texto</pre>
+                <hr>
+                <pre><b>:before</b>                 Contenido antes de un elemento</pre>
+                <hr>
+                <pre><b>:after</b>                  Contenido después de un elemento</pre>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1>Propiedad /valor</h1>
+
+
+
+    <div>
+        <p class="titulo"><b>Cajas</b></p>
+        <!-- <div class="tabla cajas">
+            <div class="contenido-tabla1">
+                <pre><b class="rojo">Border</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+border-width | border-style | border-color</pre>
+                <hr>
+                <pre><b class="rojo">border-width</b><b>(border-left-width; border-top-width; border-right-width; border-bottom-width)</b>
+thin | medium | thick | longitud</pre>
+                <hr>
+                <pre><b class="rojo">border-style</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+color</pre>
+                <hr>
+                <pre><b class="rojo">margin</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+auto | longitud</pre>
+                <hr>
+                <pre><b class="rojo">padding</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+longitud</pre>
+            </div>
+            <div class="img1">
+                <img src="cajas.PNG" alt="tabla donde se ve graficamente las propiedades de las cajas" class="img1">
+            </div>
+        </div>
+    </div> -->
+
+
+
+        <table border="1" cellspacing="0" cellpading="2" width="100%">
+            <tr>
+                <td>
+                    <pre><b class="rojo">Border</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+border-width | border-style | border-color</pre>
+                </td>
+                <td rowspan="5"><img src="cajas.PNG" alt="tabla donde se ve graficamente las propiedades de las cajas"
+                        class="img1"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <pre><b class="rojo">border-width</b><b>(border-left-width; border-top-width; border-right-width border-bottom-width)</b>
+thin | medium | thick | longitud</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><b class="rojo">border-style</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+color</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><b class="rojo">margin</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+auto | longitud</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><b class="rojo">padding</b> <b>(border-left,border-bottom, border-right, border-top)</b>
+longitud</pre>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Posicionamiento</b></p>
+            <div class="tabla">
+                <pre><b>left, top, right, bottom</b>
+auto | longitud</pre>
+                <hr>
+                <pre><b>clip</b>
+shape | auto</pre>
+                <hr>
+                <pre><b>overflow</b>
+visible | hidden | scroll | auto</pre>
+                <hr>
+                <pre><b>position</b>
+static | relative | absolute | fixed</pre>
+                <hr>
+                <pre><b>vertical-align</b>
+baseline | sub | super | top | text-top | middle | bottom |
+text-bottom | longitud</pre>
+                <hr>
+                <pre><b>z-index</b>
+auto | número</pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Dimensiones</b></p>
+            <div class="tabla">
+                <pre><b>height</b>
+auto | <i>longitud</i></pre>
+                <hr>
+                <pre><b>line-height</b>
+normal | number | <i>longitud</i></pre>
+                <hr>
+                <pre><b>max-height</b>
+none | <i>longitud</i></pre>
+                <hr>
+                <pre><b>max-width</b>
+none | <i>longitud</i></pre>
+                <hr>
+                <pre><b>max-height</b>
+<i>longitud</i> </pre>
+                <hr>
+                <pre><b>min-width</b>
+<i>longitud</i> </pre>
+                <hr>
+                <pre><b>width
+auto | <i>longitud</i>
+                </b></pre>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="tabla solo">
+        <pre>* Propiedades que se heredan. En rojo, propiedades de acceso rápido y, entre paréntesis, las propiedades a las que llaman. En cursiva, valores que deben ser incluidos por el usuario. </pre>
+    </div>
+
+
+
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Contorno</b></p>
+            <div class="tabla">
+                <pre><b class="rojo">Outline</b>
+<i>Outline-color</i>  | <i>outline-style</i> | <i>outline-width</i> </pre>
+                <hr>
+                <pre><b>Outline-color</b>
+<i>color</i> | invert</pre>
+                <hr>
+                <pre><b>onlyne-style</b>
+none | dotted | dashed | solid | double | groove | ridge | inset | outset</pre>
+                <hr>
+                <pre><b>outline-width</b>
+thin | medium | thick | <i>longitud</i></pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Tablas</b></p>
+            <div class="tabla">
+                <pre><b>border-collapse *</b>
+collapse | separate</pre>
+                <hr>
+                <pre><b>border-spacing *</b>
+<i>longitud longitud</i></pre>
+                <hr>
+                <pre><b>caption-side *</b>
+top | bottom | left | right</pre>
+                <hr>
+                <pre><b>empty-cells *</b>
+show | hide</pre>
+                <hr>
+                <pre><b>table-layout</b>
+auto | fixed</pre>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Fondo</b></p>
+            <div class="tabla">
+                <pre><b class="rojo">background</b>
+<i>background-color | background-image | background-repeat | background-
+attachment | background-position</i></pre>
+                <hr>
+                <pre><b>background-attachment</b>
+scroll | fixed</pre>
+                <hr>
+                <pre><b>background-color</b>
+Color | transparent</pre>
+                <hr>
+                <pre><b>background-image</b>
+url | none</pre>
+                <hr>
+                <pre><b>background-position</b>
+top left | top center | top right | center left | center center | center right
+| bottom left | bottom center | bottom right | x-% y-% | x-pos y-pos</pre>
+                <hr>
+                <pre><b>background-repeat</b>
+repeat | repeat-x | repeat-y | no-repeat</pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Listas</b></p>
+            <div class="tabla">
+                <pre><b class="rojo">list-style *</b>
+list-style-type | list-style-position | list-style-image</pre>
+                <hr>
+                <pre><b>list-style-image *</b>
+none | url</pre>
+                <hr>
+                <pre><b>list-style-position *</b>
+inside | outside</pre>
+                <hr>
+                <pre><b>list-style-type *</b>
+none | disc | circle | square | decimal | decimal-leading-zero | lower-
+roman upper-roman | lower-alpha | upper-alpha | lower-greek
+lower-latin | upper-latin | hebrew | armenian | georgian | cjk-ideographic
+| hiragana | katakana | hiragana-iroha | katakana-iroha</pre>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Fuentes</b></p>
+            <div class="tabla">
+                <pre><b class="rojo">font *</b>
+font-style | font-variant | font-weight | font-size/line-height | font-family
+caption | icon | menu | message-box | small-caption | status-bar</pre>
+                <hr>
+                <pre><b>font-family *</b>
+family-name | generic-family</pre>
+                <hr>
+                <pre><b>font-size *</b>
+xx-small | x-small | small | medium | large | x-large | xx-large | smaller
+larger | longitud</pre>
+                <hr>
+                <pre><b>font-size-adjust *</b>
+none | número</pre>
+                <hr>
+                <pre><b>font-stretch *</b>
+normal | wider | narrower | ultra-condensed | extra-condensed | conden-
+sed | semi-condensed | semi-expanded | expanded | extra-expanded
+ultra-expanded</pre>
+                <hr>
+                <pre><b>font-style *</b>
+normal | italic | oblique</pre>
+                <hr>
+                <pre><b>font-variant *</b>
+normal | small-caps</pre>
+                <hr>
+                <pre><b>font-weight *</b>
+normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700
+800 | 900</pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Texto</b></p>
+            <div class="tabla">
+                <pre><b>color *</b>
+color</pre>
+                <hr>
+                <pre><b>direction *</b>
+ltr | rtl</pre>
+                <hr>
+                <pre><b>letter-spacing *</b>
+normal | longitud</pre>
+                <hr>
+                <pre><b>text-align *</b>
+left | right | center | justify</pre>
+                <hr>
+                <pre><b>text-decoration</b>
+none | underline | overline | line-through | blink</pre>
+                <hr>
+                <pre><b>text-indent *</b>
+<i>longitud</i></pre>
+                <hr>
+                <pre><b>text-shadow</b>
+none | color | longitud</pre>
+                <hr>
+                <pre><b>text-transform *</b>
+none | capitalize | uppercase | lowercase</pre>
+                <hr>
+                <pre><b>unicode-bidi</b>
+normal | embed | bidi-override</pre>
+                <hr>
+                <pre><b>white-space *</b>
+normal | pre | nowrap</pre>
+                <hr>
+                <pre><b>word-spacing *</b>
+normal | longitud</pre>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="primero">
+        <div class="izq">
+            <p class="titulo"><b>Miscelánea 1</b></p>
+            <div class="tabla">
+                <pre><b>clear</b>
+left | right | both | none</pre>
+                <hr>
+                <pre><b>cursor *</b>
+url | auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-
+resize n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help</pre>
+                <hr>
+                <pre><b>content</b>
+string | url | counter(name) | counter(name, list-style-type)
+counters(name, string) | counters(name, string, list-style-type) | attr(X)
+open-quote | close-quote | no-open-quote | no-close-quote</pre>
+                <hr>
+                <pre><b>counter-increment</b>
+none | número identificativo</pre>
+                <hr>
+                <pre><b>counter-reset</b>
+none | número identificativo</pre>
+            </div>
+        </div>
+        <div class="der">
+            <p class="titulo"><b>Miscelánea 2</b></p>
+            <div class="tabla">
+                <pre><b>display</b>
+none | inline | block | list-item | run-in | compact | marker | table
+inline-table | table-row-group | table-header-group | table-footer-group
+table-row | table-column-group | table-column | table-cell | table-caption</pre>
+                <hr>
+                <pre><b>float</b>
+left | right | none</pre>
+                <hr>
+                <pre><b>marker-offset</b>
+auto | longitud</pre>
+                <hr>
+                <pre><b>position</b>
+static | relative | absolute | fixed</pre>
+                <hr>
+                <pre><b>quotes *</b>
+none | string string</pre>
+                <hr>
+                <pre><b>visibility</b>
+visible | hidden | collapse</pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+</footer>
+</div>
+
+</html>

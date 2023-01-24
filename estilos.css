@@ -2,30 +2,27 @@ html {
     text-align: center;
     margin-left: 5.5%;
     margin-right: 5.5%;
-    overflow: visible;
-}
-
-h1 {
+  }
+  
+  h1 {
     background-color: rgb(224, 38, 60);
     color: white;
     padding-top: 2%;
     padding-bottom: 2%;
     font-size: 90px;
     overflow: visible;
-
-}
-
-.titulo {
+  }
+  
+  .titulo {
     border: 5px red;
     color: rgb(30, 55, 92);
     background-color: rgb(239, 120, 121);
     border: 1px solid rgb(234, 96, 107);
     font-size: 35px;
     overflow: visible;
-
-}
-
-.tabla {
+  }
+  
+  .tabla {
     color: rgb(30, 55, 92);
     border: 1px solid rgb(234, 96, 107);
     text-align: start;
@@ -33,99 +30,75 @@ h1 {
     padding-right: 16px;
     font-size: 22px;
     overflow: visible;
-
-}
-
-
-
-
-
-
-table {
+  }
+  
+  table {
     border-color: rgb(234, 96, 107);
     color: rgb(30, 55, 92);
     text-align: start;
-    font-size: 22px
-}
-
-td {
+    font-size: 22px;
+  }
+  
+  td {
     padding-left: 16px;
-}
-
-td img {
+  }
+  
+  td img {
     display: block;
     margin: auto;
-}
-
-
-
-
-
-
-
-
-.primero {
+  }
+  
+  .primero {
     display: flex;
     /* justify-content: space-between; */
     overflow: visible;
-
-}
-
-.izq {
+  }
+  
+  .izq {
     width: 50%;
     margin-right: 8px;
     overflow: visible;
-
-}
-
-.der {
+  }
+  
+  .der {
     width: 50%;
     margin-left: 8px;
     overflow: visible;
-
-
-}
-
-
-
-
-
-
-
-.rojo {
+  }
+  
+  .rojo {
     color: red;
-}
-
-.tabla.cajas {
+  }
+  
+  .tabla.cajas {
     text-align: start;
     padding-left: 2%;
     overflow: visible;
-
-}
-
-.contenido-tabla1 {
+  }
+  
+  .contenido-tabla1 {
     position: relative;
     overflow: visible;
-
-}
-
-.img1 {
+  }
+  
+  .img1 {
     height: 400px;
     width: 400px;
     overflow: visible;
-
-}
-
-
-.solo {
+  }
+  
+  .solo {
     margin-top: 20px;
-}
-
-
-.Inicio{
+  }
+  
+  .Inicio {
+    padding: 3%;
     padding-left: 15%;
     font-size: 30px;
-}
-.Inicio1{
+    overflow: visible;
+  }
+  .Inicio1 {
+    padding: 6%;
     padding-left: 10%;
-}
+  }
+  
